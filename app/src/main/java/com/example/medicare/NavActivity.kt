@@ -14,6 +14,7 @@ class NavActivity : AppCompatActivity() {
         setContentView(R.layout.activity_nav)
         bottomNavigationView.background = null
         bottomNavigationView.menu.getItem(2).isEnabled = false
+        replaceFragment(HomeFragment())
 
         supportActionBar?.hide()
         window.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
@@ -33,9 +34,16 @@ class NavActivity : AppCompatActivity() {
 
     }
 
+    private fun replaceFragment(homeFragment: HomeFragment) {
+        val fragmentManager = supportFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.fragmentContainer, homeFragment)
+        fragmentTransaction.commit()
+    }
+
     private fun makeCurrentFragment(fragment: Fragment) {
         supportFragmentManager.beginTransaction().apply {
-            replace(R.id.bottomAppBar, fragment)
+            replace(R.id.fragmentContainer, fragment)
             commit()
         }
     }
