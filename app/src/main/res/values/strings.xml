@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">medicare</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="menu_home_title">
+        <item>Sertifikat Vaksin</item>
+        <item>Hasil Tes COVID-19</item>
+        <item>EHAC</item>
+        <item>Riwayat Check-In</item>
+        <item>Aturan Perjalanan</item>
+        <item>Teledokter</item>
+        <item>Pelayanan Kesehatan</item>
+        <item>Statistik COVID-19</item>
+        <item>Daftar Vaksin</item>
+    </string-array>
+
+    <string-array name="menu_home_icon">
+        <item>@drawable/ic_sertifikat</item>
+        <item>@drawable/ic_hasil_tes_covid</item>
+        <item>@drawable/ic_ehac</item>
+        <item>@drawable/ic_history_checkin</item>
+        <item>@drawable/ic_aturan_perjalanan</item>
+        <item>@drawable/ic_teledokter</item>
+        <item>@drawable/ic_layanan_kesehatan</item>
+        <item>@drawable/ic_statistic</item>
+        <item>@drawable/ic_vaksin</item>
+    </string-array>
+</resources>
