@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="match_parent"
+<FrameLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".HomeFragment"
@@ -98,18 +98,19 @@
                         android:id="@+id/check_in_info"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="33dp"
                         android:layout_marginHorizontal="33dp"
-                        android:outlineSpotShadowColor="#26545454"
-                        app:cardBackgroundColor="#FFFFFF"
-                        app:cardElevation="50dp"
-                        app:cardCornerRadius="20dp">
+                        android:layout_marginTop="33dp"
+                        android:outlineSpotShadowColor="#16545454"
+                        android:visibility="gone"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="50dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:padding="20dp"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            android:padding="20dp">
 
                             <androidx.constraintlayout.widget.ConstraintLayout
                                 android:layout_width="match_parent"
@@ -122,20 +123,20 @@
                                     android:src="@drawable/ic_location"
                                     app:layout_constraintBottom_toBottomOf="parent"
                                     app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent"/>
+                                    app:layout_constraintTop_toTopOf="parent" />
 
                                 <TextView
                                     android:id="@+id/place"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Ikea Sentul Main Entrance"
                                     android:layout_marginStart="10dp"
-                                    android:textSize="14dp"
                                     android:fontFamily="@font/montserrat_semibold"
+                                    android:text="Ikea Sentul Main Entrance"
                                     android:textColor="@color/dark_font"
+                                    android:textSize="14dp"
                                     app:layout_constraintBottom_toBottomOf="@id/id_ic_location"
                                     app:layout_constraintStart_toEndOf="@id/id_ic_location"
-                                    app:layout_constraintTop_toTopOf="@id/id_ic_location"/>
+                                    app:layout_constraintTop_toTopOf="@id/id_ic_location" />
 
                                 <ImageView
                                     android:layout_width="wrap_content"
@@ -143,7 +144,7 @@
                                     android:src="@drawable/ic_arrow_right"
                                     app:layout_constraintBottom_toBottomOf="@id/place"
                                     app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintTop_toTopOf="@+id/place"/>
+                                    app:layout_constraintTop_toTopOf="@+id/place" />
 
                             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -159,42 +160,42 @@
                                     android:src="@drawable/ic_walk"
                                     app:layout_constraintBottom_toBottomOf="parent"
                                     app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent"/>
+                                    app:layout_constraintTop_toTopOf="parent" />
 
                                 <TextView
                                     android:id="@+id/time_checkin"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:fontFamily="@font/montserrat_medium"
                                     android:text="In: 9.30 AM"
                                     android:textColor="@color/dark_font"
                                     android:textSize="12dp"
-                                    android:layout_marginStart="10dp"
-                                    android:fontFamily="@font/montserrat_medium"
                                     app:layout_constraintBottom_toBottomOf="@id/id_ic_walk"
                                     app:layout_constraintStart_toEndOf="@id/id_ic_walk"
-                                    app:layout_constraintTop_toTopOf="@id/id_ic_walk"/>
+                                    app:layout_constraintTop_toTopOf="@id/id_ic_walk" />
 
                                 <ImageView
                                     android:id="@+id/id_ic_timer"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:src="@drawable/ic_timer"
                                     android:layout_marginLeft="20dp"
+                                    android:src="@drawable/ic_timer"
                                     app:layout_constraintBottom_toBottomOf="@id/time_checkin"
                                     app:layout_constraintStart_toEndOf="@id/time_checkin"
-                                    app:layout_constraintTop_toTopOf="@id/time_checkin"/>
+                                    app:layout_constraintTop_toTopOf="@id/time_checkin" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="1 Jam 21 Menit"
-                                    android:textSize="12dp"
                                     android:layout_marginLeft="10dp"
                                     android:fontFamily="@font/montserrat_medium"
+                                    android:text="1 Jam 21 Menit"
                                     android:textColor="@color/dark_font"
+                                    android:textSize="12dp"
                                     app:layout_constraintBottom_toBottomOf="@id/id_ic_timer"
                                     app:layout_constraintStart_toEndOf="@id/id_ic_timer"
-                                    app:layout_constraintTop_toTopOf="@id/id_ic_timer"/>
+                                    app:layout_constraintTop_toTopOf="@id/id_ic_timer" />
 
                             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -204,32 +205,32 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="20dp"
                                 android:padding="10dp"
-                                app:cardElevation="0dp"
                                 app:cardBackgroundColor="#007FFF"
-                                app:cardCornerRadius="10dp">
+                                app:cardCornerRadius="10dp"
+                                app:cardElevation="0dp">
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:orientation="horizontal"
                                     android:layout_gravity="center_horizontal"
                                     android:gravity="center_horizontal"
+                                    android:orientation="horizontal"
                                     android:padding="10dp">
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Check-Out"
-                                        android:gravity="center"
-                                        android:textSize="12dp"
                                         android:fontFamily="@font/montserrat_semibold"
-                                        android:textColor="@color/white"/>
+                                        android:gravity="center"
+                                        android:text="Check-Out"
+                                        android:textColor="@color/white"
+                                        android:textSize="12dp" />
 
                                     <ImageView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginStart="8dp"
-                                        android:src="@drawable/ic_check_out"/>
+                                        android:src="@drawable/ic_check_out" />
 
                                 </LinearLayout>
 

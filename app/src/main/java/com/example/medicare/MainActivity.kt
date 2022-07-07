@@ -1,7 +1,9 @@
 package com.example.medicare
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.os.RecoverySystem
 import android.view.WindowManager
 import androidx.recyclerview.widget.GridLayoutManager
@@ -18,5 +20,10 @@ class MainActivity : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
         )
 
+        Handler().postDelayed({
+            val intent = Intent(this@MainActivity, NavActivity::class.java)
+            startActivity(intent)
+            finish()
+        }, 1000)
     }
 }

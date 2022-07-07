@@ -2,10 +2,13 @@ package com.example.medicare
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.view.WindowManager
+import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_nav.*
+import kotlinx.android.synthetic.main.fragment_home.*
 
 class NavActivity : AppCompatActivity() {
 
@@ -22,6 +25,13 @@ class NavActivity : AppCompatActivity() {
         val homeFragment = HomeFragment()
 
         val bottomnav = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
+
+        scan_qr.setOnClickListener {
+            val qr_checkin = findViewById<CardView>(R.id.check_in_info)
+            qr_checkin.visibility = View.VISIBLE
+        }
+
+
 
         makeCurrentFragment(homeFragment)
 
