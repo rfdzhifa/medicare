@@ -11,7 +11,8 @@
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainer"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/white">
 
 
     </androidx.fragment.app.FragmentContainerView>
@@ -32,9 +33,8 @@
             android:layout_height="match_parent"
             android:layout_gravity="center_horizontal"
             android:layout_marginEnd="15dp"
-            android:background="@android:color/transparent"
+            android:background="@color/white"
             app:itemIconTint="@color/blue_base"
-            app:itemTextColor="#FAD8D8"
             app:labelVisibilityMode="unlabeled"
             app:menu="@menu/bottom_nav_menu" />
 
