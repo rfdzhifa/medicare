@@ -1,15 +1,18 @@
 package com.example.medicare
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.view.Window
 import android.view.WindowManager
-import androidx.cardview.widget.CardView
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.journeyapps.barcodescanner.ScanContract
+import com.journeyapps.barcodescanner.ScanIntentResult
+import com.journeyapps.barcodescanner.ScanOptions
 import kotlinx.android.synthetic.main.activity_main.*
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -31,8 +34,10 @@ class MainActivity : AppCompatActivity() {
         val bottomnav = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
 
         scan_qr.setOnClickListener {
-            val qr_checkin = findViewById<CardView>(R.id.cv_check_in_info)
-            qr_checkin.visibility = View.VISIBLE
+//            val qr_checkin = findViewById<CardView>(R.id.cv_check_in_info)
+//            qr_checkin.visibility = View.VISIBLE
+
+            barcodeLauncher.launch(ScanOptions())
         }
 
 
@@ -59,6 +64,20 @@ class MainActivity : AppCompatActivity() {
         supportFragmentManager.beginTransaction().apply {
             replace(R.id.fragmentContainer, fragment)
             commit()
+        }
+    }
+
+    private val barcodeLauncher = registerForActivityResult(
+        ScanContract()
+    ) { result: ScanIntentResult ->
+        if (result.contents == null) {
+            Toast.makeText(this@MainActivity, "Cancelled", Toast.LENGTH_LONG).show()
+        } else {
+            Toast.makeText(
+                this@MainActivity,
+                "Scanned: " + result.contents,
+                Toast.LENGTH_LONG
+            ).show()
         }
     }
 }
