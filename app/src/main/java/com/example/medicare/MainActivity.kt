@@ -1,5 +1,6 @@
 package com.example.medicare
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Window
 import android.view.WindowManager
@@ -67,17 +68,14 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private val barcodeLauncher = registerForActivityResult(
+    private val barcodeLauncher   = registerForActivityResult(
         ScanContract()
     ) { result: ScanIntentResult ->
-        if (result.contents == null) {
-            Toast.makeText(this@MainActivity, "Cancelled", Toast.LENGTH_LONG).show()
-        } else {
-            Toast.makeText(
-                this@MainActivity,
-                "Scanned: " + result.contents,
-                Toast.LENGTH_LONG
-            ).show()
+        if (result.contents != null) {
+            Intent(this, WebViewActivity::class.java).run {
+                putExtra("url", result.contents)
+                startActivity(this)
+            }
         }
     }
 }
