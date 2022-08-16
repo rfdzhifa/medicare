@@ -1,4 +1,4 @@
-package com.example.medicare
+package com.example.medicare.model
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize

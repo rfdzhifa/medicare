@@ -1,4 +1,4 @@
-package com.example.medicare
+package com.example.medicare.ui
 
 import android.content.res.TypedArray
 import android.os.Bundle
@@ -8,6 +8,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.medicare.R
+import com.example.medicare.adapter.MenuAdapter
+import com.example.medicare.model.Menu
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : Fragment() {

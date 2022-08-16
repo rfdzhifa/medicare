@@ -1,4 +1,4 @@
-package com.example.medicare
+package com.example.medicare.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,6 +7,7 @@ import android.os.Handler
 import android.view.Window
 import android.view.WindowManager
 import androidx.core.content.ContextCompat
+import com.example.medicare.R
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

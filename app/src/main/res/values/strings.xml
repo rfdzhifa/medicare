@@ -4,12 +4,16 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="label_medicare">medicare</string>
     <string name="label_hi">Hai,</string>
-    <string name="label_example_name">Zhifa</string>
+    <string name="label_example_name">Rifdah Inas Nazhifah</string>
     <string name="label_example_place">Ikea Sentul Main Entrance</string>
     <string name="label_example_time">In: 9.30 AM</string>
     <string name="label_example_duration">1 Jam 21 Menit</string>
     <string name="label_check_out">Check-Out</string>
     <string name="label_vaccine_certificate">Sertifikat Vaksin</string>
+    <string name="label_email">Email</string>
+    <string name="label_example_email">rfdnazhifah@gmail.com</string>
+    <string name="label_gender">Jenis Kelamin</string>
+    <string name="label_example_gender">Perempuan</string>
 
     <string-array name="menu_home_title">
         <item>Sertifikat Vaksin</item>

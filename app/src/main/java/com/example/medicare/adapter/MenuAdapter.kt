@@ -1,11 +1,13 @@
-package com.example.medicare
+package com.example.medicare.adapter
 
-import android.view.LayoutInflater
+import  android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.medicare.model.Menu 
+import com.example.medicare.R
 
 class MenuAdapter(private val menus: ArrayList<Menu>): RecyclerView.Adapter<MenuAdapter.ViewHolder>(){
 
