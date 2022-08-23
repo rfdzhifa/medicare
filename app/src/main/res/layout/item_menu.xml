@@ -32,8 +32,8 @@
 
     <TextView
         android:id="@+id/iv_menu_name"
-        android:layout_width="73dp"
-        android:layout_height="wrap_content"
+        android:layout_width="90dp"
+        android:layout_height="33dp"
         android:fontFamily="@font/montserrat_medium"
         android:textSize="12sp"
         android:textColor="@color/dark_font"

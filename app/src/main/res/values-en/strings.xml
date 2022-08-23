@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="label_hi">Hi,</string>
+    <string name="label_example_time">In: 9.30 AM</string>
+    <string name="label_example_duration">1h 21m</string>
+    <string name="label_check_out">Check-Out</string>
+    <string name="label_vaccine_certificate">Vaccine Certificate</string>
+    <string name="label_email">Email</string>
+    <string name="label_gender">Gender</string>
+    <string name="label_example_gender">Female</string>
+
+    <string-array name="menu_home_title">
+        <item>Vaccine Certificate</item>
+        <item>Covid-19 Test Results</item>
+        <item>EHAC</item>
+        <item>Check-in History</item>
+        <item>Travel Regulations</item>
+        <item>Telemedicine</item>
+        <item>Healthcare Facility</item>
+        <item>Covid-19 Statistic</item>
+        <item>Vaccine Register</item>
+    </string-array>
+</resources>
+
