@@ -27,14 +27,14 @@
     </string-array>
 
     <string-array name="menu_home_icon">
-        <item>@drawable/ic_sertifikat</item>
-        <item>@drawable/ic_hasil_tes_covid</item>
+        <item>@drawable/ic_certificate</item>
+        <item>@drawable/ic_covid_test_result</item>
         <item>@drawable/ic_ehac</item>
-        <item>@drawable/ic_history_checkin</item>
-        <item>@drawable/ic_aturan_perjalanan</item>
-        <item>@drawable/ic_teledokter</item>
-        <item>@drawable/ic_layanan_kesehatan</item>
-        <item>@drawable/ic_statistic</item>
-        <item>@drawable/ic_vaksin</item>
+        <item>@drawable/ic_checkin_history</item>
+        <item>@drawable/ic_travel_regulation</item>
+        <item>@drawable/ic_telemedicine</item>
+        <item>@drawable/ic_healthcare</item>
+        <item>@drawable/ic_covid_statistic</item>
+        <item>@drawable/ic_vaccine_register</item>
     </string-array>
 </resources>

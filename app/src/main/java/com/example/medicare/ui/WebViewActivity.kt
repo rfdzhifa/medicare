@@ -29,7 +29,7 @@ class WebViewActivity : AppCompatActivity() {
         webViewSettings.javaScriptEnabled = true
         webViewSettings.domStorageEnabled = true
 
-        var actionBar = getSupportActionBar()
+        val actionBar = supportActionBar
 
         if(actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true)

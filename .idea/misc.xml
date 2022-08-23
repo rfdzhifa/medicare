@@ -8,7 +8,9 @@
         <entry key="..\:/Back Up Drive/Rifdah Inas Nazhifah/aplikasi/medicare/app/src/main/res/drawable/bg_btn_check_out.xml" value="0.1615" />
         <entry key="..\:/Back Up Drive/Rifdah Inas Nazhifah/aplikasi/medicare/app/src/main/res/drawable/bg_dashboard.xml" value="0.165" />
         <entry key="..\:/Back Up Drive/Rifdah Inas Nazhifah/aplikasi/medicare/app/src/main/res/drawable/ic_btn_scan_qr.xml" value="0.178" />
+        <entry key="..\:/Back Up Drive/Rifdah Inas Nazhifah/aplikasi/medicare/app/src/main/res/drawable/ic_certificate.xml" value="0.178" />
         <entry key="..\:/Back Up Drive/Rifdah Inas Nazhifah/aplikasi/medicare/app/src/main/res/drawable/ic_check_out.xml" value="0.1615" />
+        <entry key="..\:/Back Up Drive/Rifdah Inas Nazhifah/aplikasi/medicare/app/src/main/res/drawable/ic_ehac.xml" value="0.178" />
         <entry key="..\:/Back Up Drive/Rifdah Inas Nazhifah/aplikasi/medicare/app/src/main/res/drawable/ic_hasil_tes_covid.xml" value="0.178" />
         <entry key="..\:/Back Up Drive/Rifdah Inas Nazhifah/aplikasi/medicare/app/src/main/res/drawable/ic_history_checkin.xml" value="0.178" />
         <entry key="..\:/Back Up Drive/Rifdah Inas Nazhifah/aplikasi/medicare/app/src/main/res/drawable/ic_home.xml" value="0.165" />
@@ -26,10 +28,10 @@
         <entry key="..\:/Back Up Drive/Rifdah Inas Nazhifah/aplikasi/medicare/app/src/main/res/layout/activity_splash.xml" value="0.1" />
         <entry key="..\:/Back Up Drive/Rifdah Inas Nazhifah/aplikasi/medicare/app/src/main/res/layout/activity_web_view.xml" value="0.13333333333333333" />
         <entry key="..\:/Back Up Drive/Rifdah Inas Nazhifah/aplikasi/medicare/app/src/main/res/layout/fragment_dashboard.xml" value="0.18" />
-        <entry key="..\:/Back Up Drive/Rifdah Inas Nazhifah/aplikasi/medicare/app/src/main/res/layout/fragment_home.xml" value="0.15" />
+        <entry key="..\:/Back Up Drive/Rifdah Inas Nazhifah/aplikasi/medicare/app/src/main/res/layout/fragment_home.xml" value="0.17" />
         <entry key="..\:/Back Up Drive/Rifdah Inas Nazhifah/aplikasi/medicare/app/src/main/res/layout/fragment_profile.xml" value="0.12" />
         <entry key="..\:/Back Up Drive/Rifdah Inas Nazhifah/aplikasi/medicare/app/src/main/res/layout/home_fragment.xml" value="0.18" />
-        <entry key="..\:/Back Up Drive/Rifdah Inas Nazhifah/aplikasi/medicare/app/src/main/res/layout/item_menu.xml" value="0.2" />
+        <entry key="..\:/Back Up Drive/Rifdah Inas Nazhifah/aplikasi/medicare/app/src/main/res/layout/item_menu.xml" value="0.5" />
         <entry key="..\:/Back Up Drive/Rifdah Inas Nazhifah/aplikasi/medicare/app/src/main/res/layout/item_profile_fragment.xml" value="0.25" />
         <entry key="..\:/Back Up Drive/Rifdah Inas Nazhifah/aplikasi/medicare/app/src/main/res/layout/item_view.xml" value="0.25" />
         <entry key="..\:/Back Up Drive/Rifdah Inas Nazhifah/aplikasi/medicare/app/src/main/res/menu/bottom_nav_menu.xml" value="0.12" />
